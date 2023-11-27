@@ -1,0 +1,144 @@
+body{
+    
+    font-family: futuramedium,'Trebuchet MS',Arial,sans-serif;
+}
+.navbar{
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+  }
+  nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-right:8%;
+    padding-left: 8%;
+    z-index: 9999;
+    
+  }
+  .logo{
+   color: rgb(0, 0, 0);
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+  span{
+    color:#f9004d;
+    content: "\2193";
+  }
+  
+  nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+  }
+  nav ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform:capitalize;
+  }
+  nav ul li a:hover{
+    color: #f9004d;
+    transition: .3s;
+  }
+  .btn{
+    background-color: #f9004d;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border:2px solid transparent ;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform 0.4s;
+  }
+  .btn:hover{
+    transform: scale(1.2);
+  }
+.main_display{
+position: relative;;
+float:center;
+text-align: center;
+}
+
+.Comments{
+position: relative;
+float:initial;
+top: 380%;
+}
+.Comments1{
+   position: relative;
+float: initial;
+top: 380%;
+    }
+    
+
+span {
+      content: "\2193";
+      
+    }
+    .slideshow {
+        z-index: -1;
+        list-style-type: none;
+      }
+      
+      /** SLIDESHOW **/
+      .slideshow,
+      .slideshow:after { 
+          top: -16px; /*Not sure why I needed this fix*/
+              position: fixed;
+          width: 100%;
+          height: 100%;
+          left: 0px;
+          z-index: 0; 
+      }
+      
+      .slideshow li span { 
+              position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0px;
+          left: 0px;
+          color: transparent;
+          background-size: cover;
+          background-position: 50% 50%;
+          background-repeat: no-repeat;
+          opacity: 0;
+          z-index: 0;
+          animation: imageAnimation 30s linear infinite 0s; 
+      }
+     
+      .slideshow li:nth-child(1) span { 
+          background-image: url(https://c0.wallpaperflare.com/preview/913/891/716/united-kingdom-bristol-urban-snow.jpg); 
+      }
+      .slideshow li:nth-child(2) span { 
+          background-image: url(https://ichef.bbci.co.uk/news/976/cpsprodpb/2218/production/_124982780_gettyimages-1219196838.jpg);
+          animation-delay: 03s; 
+      }
+      .slideshow li:nth-child(3) span { 
+          background-image: url("https://uploads-ssl.webflow.com/5976a3655fcd654cb3d604ca/5c00c9963ea913260bb41b0e_powerlines.jpg");
+          animation-delay:6s; 
+      }
+      .slideshow li:nth-child(4) span { 
+          background-image: url(https://a.travel-assets.com/findyours-php/viewfinder/images/res70/411000/411967-Bristol-Council-House.jpg);   
+          animation-delay: 9s; 
+      }
+      @keyframes imageAnimation { 
+          0% { opacity: 0; animation-timing-function: ease-in; }
+          8% { opacity: 1; animation-timing-function: ease-out; }
+          17% { opacity: 1 }
+          25% { opacity: 0 }
+          100% { opacity: 0 }
+      }   
+      @keyframes titleAnimation { 
+          0% { opacity: 0 }
+          8% { opacity: 1 }
+          17% { opacity: 1 }
+          19% { opacity: 0 }
+          100% { opacity: 0 }
+      }  
+      .no-cssanimations .cb-slideshow li span {
+          opacity: 1;
+      }
+    

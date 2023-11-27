@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script scr="validation.js"></script>
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact US!</title>
+    <link rel="shortcut icon" type="image.png" href="images/favicon.ico">
+    
+</head>
+<body>
+    <div>
+        <ul class="slideshow">
+          <li><span></span></li>
+          <li><span>2</span></li>
+          <li><span></span></li>
+          <li><span></span></li>
+        </ul>
+      </div>
+<!-- Main Diplay Section -->
+	
+<section class="main_display">
+
+        <div  class="navbar" >
+                <div class="lol">
+                 <nav>
+                 <h2 class="logo">BRIST<span>OL</span><a href="home.html"></a></h2 >
+                 <ul>
+                   <li><a href="home.html">home</a></li>
+                   <li><a href="about page.html">about</a></li>
+                   <li><a href="contact.html">contact</a></li>
+                   <li><a href="https://visitbristol.co.uk/whats-on">What's On</a></li>
+                 </ul>
+                 <a href="#" class="btn">Join Now</a>
+                 </nav>
+               </div>
+
+		
+    <h1>Contact Form</h1>
+    
+    <p>Fill In The Form Below</p>
+    <span>&#8595;</span>
+    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+        <div>
+            <label for="name">Name:
+            <input type="text" name="fname" id="name" />
+            </label>
+            <br>
+            <br>
+        </div>
+        <div>
+            <label for="email">Email:
+            <input type="text" name="Email" id="email" />
+            </label>
+            <br>
+            <br>
+        </div>
+        <div class="Comments">
+            
+            <label>Feedback:</label>
+            <p></p>
+            <span>&#8595;</span>
+            <br />
+            
+            <textarea name="Comments" rows="5" cols="100"></textarea>
+        </div>
+        <div class="Comments1">
+            <input type="submit" name="submit" value="Send" />
+            <input type="reset" name="reset" value="Clear Form" />
+        </div>
+    </form>
+
+</section>
+
+<script src="validation.js"></script>
+<!-- Javascript
+    <script>
+		function validateForm() {
+		let x = document.forms["myForm"]["fname"].value;
+		if (x == "") {
+			alert("Name must be filled out");
+			return false;
+		}
+		let y = document.forms["myForm"]["Email"].value;
+		if (y == "") {
+			alert("Email must be filled out");
+			return false;
+		}
+		let z = document.forms["myForm"]["Comments"].value;
+		if (z == "") {
+			alert("Comments must be filled out");
+			return false;
+		}
+	}
+	</script>-->
+</body>
+</html>
